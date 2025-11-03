@@ -19,23 +19,27 @@
     </div>
 
     <header class="header lg:flex justify-between items-center bg-[#00adef]">
-        <div class="flex justify-between items-center p-5">
+        <div class="flex justify-between items-center p-5 w-full relative">
             <a href="index.html">
-                <img class="h-16 ml-2" src="./assets/images/logobianco.png" alt="Franchioni">
+                <img class="h-16 ml-2" src="./assets/images/logobianco.png" alt="Logo Franchioni">
+            </a>
+            <a class="titolo flex flex-col justify-center text-center font-bold text-white leading-tight sm:text-2xl lg:hidden">
+                <span>FRANCHIONI FABIO</span>
+                <span>& C. S.N.C.</span>
             </a>
             <div class="menu-icon mr-2" onclick="toggleMenu()">&#9776;</div>
 
         </div>
         <nav id="menu" class="hidden md:flex flex-row text-slate-100 font-semibold">
-            <a class="navboxes md:text-2xl pr-0 lg:pr-[30px]" href="#chi-siamo">Chi Siamo</a>
-            <a class="navboxes md:text-2xl pr-0 lg:pr-[30px]" href="#servizi">Servizi</a>
-            <a class="navboxes md:text-2xl pr-0 lg:pr-[30px]" href="#dove-siamo">Dove siamo</a>
-            <a class="navboxes md:text-2xl pr-0 lg:pr-[30px]" href="#contatti">Contatti</a>
+            <a class="navboxes md:text-2xl pr-0 lg:pr-[30px] whitespace-nowrap" href="#chi-siamo">Chi Siamo</a>
+            <a class="navboxes md:text-2xl pr-0 lg:pr-[30px] whitespace-nowrap" href="#servizi">Servizi</a>
+            <a class="navboxes md:text-2xl pr-0 lg:pr-[30px] whitespace-nowrap" href="#dove-siamo">Dove siamo</a>
+            <a class="navboxes md:text-2xl pr-0 lg:pr-[30px] whitespace-nowrap" href="#contatti">Contatti</a>
         </nav>
     </header>
 
 
-    <div class="mt-36 md:mt-24">
+    <div class="mt-24">
         <div class="slideshow-container">
             <div class="slides">
                 <img class="slide" src="./assets/images/FotoPiccole/1crop.jpg"></img>
@@ -54,7 +58,7 @@
             <div class="arrow right">&#10095;</div>
         </div>
 
-        <div class="hidden xl:block absolute inset-x-0 bottom-0 text-center p-3 z-30">
+        <div class="hidden xl:block absolute inset-x-0 bottom-0 text-center p-3 z-30" id="scroll-content">
             <div class="flex flex-col gap-5 place-content-center">
                 <div class="flex place-content-center rounded-lg">
                     <div class="px-2 py-1 rounded-lg bg-white">
@@ -109,14 +113,14 @@
                         <p class="indent-0.5 text-base"> • Impianti d’allarme e di videosorveglianza </p>
                         <p class="indent-0.5 text-base"> • Impianti telefonici e di rete </p>
                         <p class="indent-0.5 text-base"> • Automazioni per porte e cancelli </p>
-                        <p class="indent-0.5 text-base"> • Impianti Tv e Sat </p>
+                        <p class="indent-0.5 text-base"> • Impianti TV e Sat </p>
                         <p class="indent-0.5 text-base"> • Impianti citofonici </p>
                         <p class="indent-0.5 text-base"> • Impianti elettrici luci e prese </p>
                     </div>
                     <div class="service">
                         <h3 class="font-semibold">Impianti elettrici industriali</h3>
                         <p class="indent-0.5 text-base"> • Quadri elettrici di potenza e di controllo </p>
-                        <p class="indent-0.5 text-base"> • Cabine MT/BT </p>
+                        <p class="indent-0.5 text-base"> • Cabine MT / BT </p>
                         <p class="indent-0.5 text-base"> • Illuminazione di emergenza </p>
                         <p class="indent-0.5 text-base"> • Schemi elettrici </p>
                         <p class="indent-0.5 text-base"> • Manutenzione impianti </p>
@@ -136,7 +140,7 @@
 
         <section id="dove-siamo">
             <div class="content flex flex-col gap-8 p-8">
-                <h2 class="text-4xl font-bold ">Dove siamo</h2>
+                <h2 class="text-4xl font-semibold mb-4">Dove siamo</h2>
             </div>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3758.8146709831417!2d9.622171576941879!3d45.75575331393775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x467175056e17ea4d%3A0xc40221f9eec20332!2sFRANCHIONI%20FABIO%20%26%20C.%20S.N.C.!5e1!3m2!1sit!2sit!4v1762186430800!5m2!1sit!2sit"
@@ -148,18 +152,17 @@
             <div class="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2">
                 <div class="tabellafondo">
                     <div id="contatti" class="contact">
-                        <a class="text-3xl font-semibold mb-4" target="_blank"
-                            href="./assets/FRANCHIONI FABIO & C. S.N.C..vcf">Contattaci</a>
+                        <h1 class="text-3xl font-semibold mb-4" target="_blank"
+                            href="./assets/FRANCHIONI FABIO & C. S.N.C..vcf">Contattaci</h1>
                         <p>Email: <a class="underline decoration-black" href="mailto:info@franchioni.it">
                                 info@franchioni.it </a><br>
                             PEC: <a class="underline decoration-black" href="mailto:franchionisnc@legalmail.it">
                                 franchionisnc@legalmail.it</a><br>
                             Telefono: <a class="underline decoration-black" href="tel:+39 3358198193"> +39 335 819 8193
                             </a><br>
-                            Indirizzo: 
-                            <a class="underline decoration-black" target="_blank"
-                                href="https://maps.app.goo.gl/7apCXDPPx2fwYe469"> Via San Mauro 38 - 24018 -
-                                Villa d'Alme (BG)</a><br>
+                            Indirizzo: <a class="underline decoration-black" target="_blank"
+                                href="https://maps.app.goo.gl/7apCXDPPx2fwYe469"> Via San Mauro, 38, 24018 Villa d'Almè,
+                                Bergamo</a><br>
                         </p>
                     </div>
                 </div>
@@ -176,11 +179,12 @@
             </div>
         </div>
 
-        <div class="text-center">Sede legale: Via San Mauro, 38, 24018 Villa d'Almè, Bergamo</p>
-        </div>
+        <!-- <div class="text-center">Sede legale: Via San Mauro, 38, 24018 Villa d'Almè, Bergamo</p>
+        </div> -->
 
-        <div class="text-center">© 2025 FRANCHIONI FABIO & C. S.N.C. - C.F. / P.IVA: <a class="underline" target="_blank"
-                href="https://www.ufficiocamerale.it/4543/franchioni-fabio-c-snc" a>01958680165</a> - Tutti i diritti
+        <div class="text-center">Copyright © 2025 FRANCHIONI FABIO & C. S.N.C. - C.F. / P.IVA: <a class="underline"
+                target="_blank" href="https://www.ufficiocamerale.it/4543/franchioni-fabio-c-snc" a>01958680165</a> -
+            Tutti i diritti
             riservati</p>
         </div>
 

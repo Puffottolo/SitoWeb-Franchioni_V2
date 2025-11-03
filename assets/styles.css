@@ -14,6 +14,13 @@ body {
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: 'FFfont';
+    src: url('./Vandiana_Platin_Lite.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .navboxes {
     transition: color 0.3s;
 }
@@ -166,6 +173,12 @@ body {
     z-index: 1000;
 }
 
+.titolo {
+    color: white;
+    font-family: 'FFfont';
+    letter-spacing: 2px;
+}
+
 .header.scrolled {
     position: fixed;
     top: 10px;
@@ -202,7 +215,9 @@ body {
 }
 
 .crediti {
-    color: white;
+    background-color: #00adef;
+    color: #00adef;
+    text-align: center;
 }
 
 /* Menu nascosto per mobile */

@@ -128,3 +128,16 @@ document.addEventListener("DOMContentLoaded", () => {
         loadingScreen.style.display = 'none';
     }, 3000); // La durata deve corrispondere a quella dell'animazione (2s)
 });
+
+window.addEventListener('scroll', function() {
+    const scrollContent = document.getElementById('scroll-content');
+    const scrollPosition = window.scrollY;
+    
+    // Inizia a svanire dopo 100px di scroll
+    if (scrollPosition > 100) {
+        const opacity = Math.max(0, 1 - (scrollPosition - 100) / 200);
+        scrollContent.style.opacity = opacity;
+    } else {
+        scrollContent.style.opacity = 1;
+    }
+});
