@@ -1,0 +1,90 @@
+{
+  "name": "FRANCHIONI FABIO & C. S.N.C.",
+  "short_name": "Franchioni",
+  "description": "Da 35 anni offriamo soluzioni complete per impianti elettrici civili ed industriali attraverso progettazione, programmazione e manutenzione.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#00adef",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "./assets/images/logoazzurro.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/images/logoazzurro.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/images/logobianco.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./assets/images/logobianco.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./assets/images/FotoPiccole/1crop.jpg",
+      "sizes": "540x720",
+      "type": "image/jpg",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "./assets/images/FotoPiccole/2.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpg",
+      "form_factor": "wide"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Chi Siamo",
+      "short_name": "Chi Siamo",
+      "description": "Scopri la storia e l'esperienza di Franchioni",
+      "url": "/#chi-siamo",
+      "icons": [
+        {
+          "src": "./assets/images/logoazzurro.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Servizi",
+      "short_name": "Servizi",
+      "description": "Visualizza i servizi offerti",
+      "url": "/#servizi",
+      "icons": [
+        {
+          "src": "./assets/images/logoazzurro.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Contatti",
+      "short_name": "Contatti",
+      "description": "Contattaci direttamente",
+      "url": "/#contatti",
+      "icons": [
+        {
+          "src": "./assets/images/logoazzurro.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
