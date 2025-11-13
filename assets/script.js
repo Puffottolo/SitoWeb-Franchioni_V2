@@ -140,24 +140,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 2500); // La durata deve corrispondere a quella dell'animazione (2.5s)
 });
 
-let scrollOpacityTimeout;
 
-function handleScrollOpacity() {
-    clearTimeout(scrollOpacityTimeout);
-    scrollOpacityTimeout = setTimeout(() => {
-        const scrollContent = document.getElementById('scroll-content');
-        if (!scrollContent) return;
-        
-        const scrollPosition = window.scrollY;
-        
-        // Inizia a svanire dopo 100px di scroll
-        if (scrollPosition > 100) {
-            const opacity = Math.max(0, 1 - (scrollPosition - 100) / 200);
-            scrollContent.style.opacity = opacity;
-        } else {
-            scrollContent.style.opacity = 1;
-        }
-    }, 10);
-}
-
-window.addEventListener('scroll', handleScrollOpacity, { passive: true });
+window.addEventListener('scroll', function() {
+    const scrollContent = document.getElementById('scroll-content');
+    const scrollPosition = window.scrollY;
+    
+    // Inizia a svanire dopo 100px di scroll
+    if (scrollPosition > 100) {
+        const opacity = Math.max(0, 1 - (scrollPosition - 100) / 200);
+        scrollContent.style.opacity = opacity;
+    } else {
+        scrollContent.style.opacity = 1;
+    }
+});
