@@ -81,20 +81,14 @@ initSlideshow();
 
 // Magic Island
 const header = document.querySelector('.header');
-let scrollTimeout;
 
-function handleScroll() {
-    clearTimeout(scrollTimeout);
-    scrollTimeout = setTimeout(() => {
-        if (window.scrollY > 100) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    }, 10);
-}
-
-window.addEventListener('scroll', handleScroll, { passive: true });
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) { // or any other threshold value
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
 
 
 //spostamento href header
