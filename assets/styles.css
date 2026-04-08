@@ -107,6 +107,7 @@ body {
     padding: 10px;
     cursor: pointer;
     z-index: 2;
+    user-select: none;
 }
 
 .arrow.left {
